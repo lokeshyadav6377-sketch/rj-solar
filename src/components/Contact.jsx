@@ -1,109 +1,120 @@
 
-function Contact(){
-    return(
+function Contact() {
+  return (
+    <section className="contact section" id="contact">
 
-        <section className="contact section" id="contact">
+      <div className="container">
 
-        <div className="container">
+        <div className="section-heading">
 
-          <div className="section-heading">
+          <p className="section-small">
+            CONTACT WITH US
+          </p>
 
-            <p className="section-small">
-              CONTACT WITH US!
-            </p>
+          <h2>Have Any Questions?</h2>
 
-            <h2>
-              Have Any Questions?
-            </h2>
+          <p>
+            Contact RJ Solar & Energies for solar
+            consultation, installation and support.
+          </p>
 
-            <p>
-              Enthusiastically disintermediate one-to-one leadership
-              via business e-commerce. Dramatically reintermediate
-              compelling process improvements rather than empowered
-              relationships.
-            </p>
+        </div>
 
-          </div>
+        <div className="contact-container">
 
+          <form
+            className="contact-form"
+            action="mailto:rjsolarandenerigies@gmail.com"
+            method="post"
+            encType="text/plain"
+          >
 
-          <div className="contact-container">
-
-            <form className="contact-form">
-
-              <div className="form-row">
-
-                <input
-                  type="text"
-                  placeholder="Enter Your Name"
-                />
-
-                <input
-                  type="text"
-                  placeholder="Enter Your Last Name"
-                />
-
-              </div>
-
+            <div className="form-row">
 
               <input
-                type="email"
-                placeholder="Enter Your Email"
+                type="text"
+                name="First Name"
+                placeholder="Enter Your Name"
+                required
               />
-
 
               <input
-                type="tel"
-                placeholder="Phone Number"
+                type="text"
+                name="Last Name"
+                placeholder="Enter Your Last Name"
               />
 
+            </div>
 
-              <textarea
-                placeholder="Write Your Message"
-                rows="6"
-              ></textarea>
+            <input
+              type="email"
+              name="Email"
+              placeholder="Enter Your Email"
+              required
+            />
 
+            <input
+              type="tel"
+              name="Phone"
+              placeholder="Phone Number"
+              required
+            />
 
-              <button className="primary-btn">
-                Make An Appointment
-              </button>
+            <textarea
+              name="Message"
+              placeholder="Write Your Message"
+              rows="6"
+              required
+            ></textarea>
 
-            </form>
+            <button type="submit" className="primary-btn">
+              Send Message
+            </button>
 
+          </form>
 
-            <div className="contact-info">
+          <div className="contact-info">
 
-              <div className="contact-item">
+            <div className="contact-item">
 
-                <h3>Er. Gopal Lal Yadav</h3>
+              <h3>Contact Person</h3>
 
-                <p>
+              <p>Er. Gopal Lal Yadav</p>
+
+            </div>
+
+            <div className="contact-item">
+
+              <h3>Phone Number</h3>
+
+              <p>
+                <a href="tel:+919110720924">
                   +91 9110720924
-                </p>
+                </a>
+              </p>
 
-              </div>
+            </div>
 
+            <div className="contact-item">
 
-              <div className="contact-item">
+              <h3>Email Address</h3>
 
-                <h3>Email Address</h3>
-
-                <p>
+              <p>
+                <a href="mailto:rjsolarandenerigies@gmail.com">
                   rjsolarandenerigies@gmail.com
-                </p>
+                </a>
+              </p>
 
-              </div>
+            </div>
 
+            <div className="contact-item">
 
-              <div className="contact-item">
+              <h3>Our Office Address</h3>
 
-                <h3>Our Office Address</h3>
-
-                <p>
-                  Annu Vihar-A,Kalwar road,manchwa
-                  Jaipur 302012
-                </p>
-
-              </div>
+              <p>
+                Annu Vihar-A, Kalwar Road, Manchwa,
+                Jaipur 302012
+              </p>
 
             </div>
 
@@ -111,9 +122,10 @@ function Contact(){
 
         </div>
 
-      </section>
+      </div>
 
-    );
+    </section>
+  );
 }
 
 export default Contact;

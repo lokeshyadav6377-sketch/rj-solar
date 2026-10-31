@@ -1,54 +1,56 @@
 
 function About() {
-  return(
+  return (
+    <section className="about section" id="about">
 
-     <section className="about section">
+      <div className="container about-container">
 
-  <div className="container about-container">
+        <div className="about-image">
+          <div className="image-box">
+            ☀️
+          </div>
+        </div>
 
-    <div className="about-image">
-      <div className="image-box">
-        ☀️
+        <div className="about-content">
+
+          <p className="section-small">
+            ABOUT RJ SOLAR & ENERGIES
+          </p>
+
+          <h2>
+            Switch To Solar
+            <br />
+            Save On Your Electricity Bills
+          </h2>
+
+          <p>
+            RJ Solar & Energies provides reliable and
+            affordable solar energy solutions for homes,
+            businesses and commercial properties.
+          </p>
+
+          <p>
+            Our goal is to help customers reduce electricity
+            expenses while contributing towards a cleaner
+            and greener future.
+          </p>
+
+          <p>
+            From solar consultation and installation to
+            maintenance and support, we provide solar
+            solutions according to your energy requirements.
+          </p>
+
+          <a href="#contact" className="primary-btn">
+            Know More
+          </a>
+
+        </div>
+
       </div>
-    </div>
 
-    <div className="about-content">
-
-      <p className="section-small">
-        ABOUT RJ SOLAR & ENERGIES
-      </p>
-
-      <h2>
-        Switch To Solar
-        <br />
-        Save On Your Electricity Bills
-      </h2>
-
-      <p>
-        RJ Solar & Energies provides reliable and affordable solar
-        energy solutions for homes, businesses and other properties.
-        Our goal is to help customers reduce electricity expenses
-        while making a positive contribution towards a cleaner future.
-      </p>
-
-      <p>
-        From solar consultation and system installation to maintenance
-        and support, we provide complete solar solutions according to
-        your energy requirements.
-      </p>
-
-      <button className="primary-btn">
-        Know More
-      </button>
-
-    </div>
-
-  </div>
-
-</section>
-
+    </section>
   );
 }
 
-     
 export default About;

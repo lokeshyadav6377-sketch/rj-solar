@@ -1,62 +1,62 @@
+
 import { solarSolutions, solarBenefits } from "../data";
-function Solarsol(){
-  return(
-      <section className="technology section" id="solutions">
 
-  <div className="container">
+function Solarsol() {
+  return (
+    <section className="technology section" id="solutions">
 
-    <div className="section-heading">
+      <div className="container">
 
-      <p className="section-small">
-        OUR SOLAR SOLUTIONS
-      </p>
+        <div className="section-heading">
 
-      <h2>
-        Smart & Reliable Solar Energy Solutions
-      </h2>
+          <p className="section-small">
+            OUR SOLAR SOLUTIONS
+          </p>
 
-      <p>
-        We provide complete solar energy solutions for homes,
-        businesses and commercial properties.
-      </p>
+          <h2>Smart & Reliable Solar Energy Solutions</h2>
 
-    </div>
+          <p>
+            We provide solar energy systems for homes,
+            businesses and commercial properties.
+          </p>
 
-    <div className="technology-box">
+        </div>
 
-      <h3>Our Solar Systems</h3>
+        <div className="technology-box">
 
-      <div className="tech-grid">
+          <h3>Our Solar Systems</h3>
 
-        {solarSolutions.map((solution, index) => (
-          <div className="tech-item" key={index}>
-            ☀️ {solution}
+          <div className="tech-grid">
+
+            {solarSolutions.map((solution, index) => (
+              <div className="tech-item" key={index}>
+                ☀️ {solution}
+              </div>
+            ))}
+
           </div>
-        ))}
+
+        </div>
+
+        <div className="technology-box">
+
+          <h3>Benefits of Solar Energy</h3>
+
+          <div className="tech-grid">
+
+            {solarBenefits.map((benefit, index) => (
+              <div className="tech-item" key={index}>
+                ✓ {benefit}
+              </div>
+            ))}
+
+          </div>
+
+        </div>
 
       </div>
 
-    </div>
-
-    <div className="technology-box">
-
-      <h3>Benefits of Solar Energy</h3>
-
-      <div className="tech-grid">
-
-        {solarBenefits.map((benefit, index) => (
-          <div className="tech-item" key={index}>
-            ✓ {benefit}
-          </div>
-        ))}
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+    </section>
   );
 }
 

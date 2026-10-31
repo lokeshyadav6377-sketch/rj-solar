@@ -1,79 +1,107 @@
-const services = [
+
+export const services = [
   {
-    title: "Rooftop Solar",
+    id: 1,
     icon: "☀️",
+    title: "Residential Solar",
     description:
-      "High-quality rooftop solar systems designed to reduce your electricity bills and provide reliable clean energy for your home or business."
+      "Affordable rooftop solar installation for homes to reduce electricity bills."
   },
   {
+    id: 2,
+    icon: "🏢",
+    title: "Commercial Solar",
+    description:
+      "Efficient solar power systems for offices, shops and commercial buildings."
+  },
+  {
+    id: 3,
+    icon: "🔋",
     title: "Solar Panel Installation",
-    icon: "🔧",
     description:
-      "Professional solar panel installation with proper planning, mounting and electrical setup for maximum solar performance."
+      "Professional installation of high-quality solar panels for reliable energy."
   },
   {
+    id: 4,
+    icon: "⚡",
     title: "Solar Maintenance",
-    icon: "🛠️",
     description:
-      "Complete solar system maintenance and support to keep your solar panels operating efficiently for years."
-  },
-  {
-    title: "Solar Consultation",
-    icon: "📋",
-    description:
-      "Get expert guidance to choose the right solar system according to your electricity consumption, roof space and budget."
+      "Solar system inspection, maintenance and support for better performance."
   }
 ];
 
-const solarSolutions = [
-  "Rooftop Solar",
+export const solarSolutions = [
   "On-Grid Solar System",
   "Off-Grid Solar System",
-  "Solar Panel Installation",
-  "Solar Inverter",
-  "Solar Maintenance",
-  "Residential Solar",
-  "Commercial Solar"
+  "Hybrid Solar System",
+  "Rooftop Solar System",
+  "Residential Solar System",
+  "Commercial Solar System"
 ];
 
-const solarBenefits = [
-  "Lower Electricity Bills",
-  "Clean & Renewable Energy",
-  "Long-Term Savings",
+export const solarBenefits = [
+  "Reduce Electricity Bills",
+  "Clean and Green Energy",
   "Low Maintenance",
+  "Long-Term Savings",
   "Energy Independence",
   "Environment Friendly"
 ];
-const team = [
+
+export const team = [
   {
+    id: 1,
     name: "Er. Gopal Lal Yadav",
-    role: "Solar Energy Expert",
+    role: "Founder & Solar Consultant"
   },
   {
-    name: "RJ Solar Team",
-    role: "Solar Installation Specialist",
+    id: 2,
+    name: "Installation Team",
+    role: "Solar Installation Experts"
   },
   {
-    name: "Solar Support Team",
-    role: "Maintenance & Support",
+    id: 3,
+    name: "Technical Team",
+    role: "Technical Support"
   },
   {
-    name: "Solar Consultant",
-    role: "Solar Energy Consultant",
-  },
+    id: 4,
+    name: "Customer Support",
+    role: "Customer Assistance"
+  }
 ];
-const blogs = [
+
+export const projects = [
   {
-    date: "August 10, 2026",
-    title: "Benefits of Installing Rooftop Solar",
+    id: 1,
+    category: "Residential Solar",
+    title: "Residential Rooftop Solar"
   },
   {
-    date: "August 05, 2026",
-    title: "How Solar Energy Can Reduce Your Electricity Bill",
+    id: 2,
+    category: "Commercial Solar",
+    title: "Commercial Solar Installation"
   },
   {
-    date: "July 28, 2026",
-    title: "On-Grid vs Off-Grid Solar System",
-  },
+    id: 3,
+    category: "Solar Energy",
+    title: "Complete Solar Energy Solution"
+  }
 ];
-export { services, solarSolutions, solarBenefits, team, blogs};
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Customer Review",
+    role: "Residential Customer",
+    message:
+      "RJ Solar & Energies provided professional guidance and support for our solar installation."
+  },
+  {
+    id: 2,
+    name: "Customer Review",
+    role: "Solar Customer",
+    message:
+      "The team helped us understand solar energy solutions and the installation process."
+  }
+];

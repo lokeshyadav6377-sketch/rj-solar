@@ -1,65 +1,52 @@
 
-function Testimonial(){
-    return(
+import { testimonials } from "../data";
 
-        <section className="testimonial section">
+function Testimonial() {
+  return (
+    <section className="testimonial section" id="testimonial">
 
-        <div className="container testimonial-container">
+      <div className="container">
 
-          <div>
+        <div className="section-heading">
 
-            <p className="section-small">
-              TESTIMONIAL
-            </p>
+          <p className="section-small">
+            CUSTOMER FEEDBACK
+          </p>
 
-            <h2>
-              Prioritize Client Services
-              <br />
-              & Their Satisfaction
-            </h2>
+          <h2>What Our Customers Say</h2>
 
-          </div>
-
-
-          <div className="testimonial-card">
-
-            <p>
-              Lorem Ipsum is simply dummy text of the printing
-              and typesetting industry. Lorem Ipsum has been
-              the industry's standard dummy text ever since
-              the 1500s.
-            </p>
-
-            <h3>
-              Matt Pierce
-            </h3>
-
-            <span>
-              Director International Growth
-            </span>
-
-            <div className="rating">
-              ⭐⭐⭐⭐⭐
-              <strong>4.8</strong>
-            </div>
-
-            <small>
-              Rating based on over 12k+ Reviews
-            </small>
-
-          </div>
+          <p>
+            Customer satisfaction is important to us.
+            We work to provide reliable solar solutions
+            and professional support.
+          </p>
 
         </div>
 
-      </section>
+        <div className="portfolio-grid">
 
+          {testimonials.map((item) => (
+            <div className="testimonial-card" key={item.id}>
 
-      
-      
+              <div className="rating">
+                ⭐⭐⭐⭐⭐
+              </div>
 
-    );
+              <p>{item.message}</p>
+
+              <h3>{item.name}</h3>
+
+              <span>{item.role}</span>
+
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+
+    </section>
+  );
 }
 
 export default Testimonial;
-
-      

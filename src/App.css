@@ -795,3 +795,62 @@ button {
   }
 
 }
+
+
+/* Additional RJ Solar Styling */
+
+section[id] {
+  scroll-margin-top: 85px;
+}
+
+.primary-btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.quote-btn {
+  display: inline-block;
+  text-align: center;
+}
+
+.hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 29, 60, 0.95),
+      rgba(20, 29, 60, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1509391366360-2e959784a276")
+    center/cover no-repeat;
+}
+
+.testimonial-card {
+  height: 100%;
+}
+
+.contact-item a {
+  color: inherit;
+}
+
+.contact-item a:hover {
+  color: #5167f5;
+}
+
+.nav-links a {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-wrap: nowrap;
+  }
+
+  .quote-btn {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
