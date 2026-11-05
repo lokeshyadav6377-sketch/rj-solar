@@ -63,7 +63,8 @@ function Footer() {
       </div>
 
       <div className="copyright">
-        © 2026 RJ Solar & Energies. All Rights Reserved.
+        RJ Solar & Energies. All Rights Reserved.
+             © 2026 create by avneetyadav
       </div>
 
     </footer>
